@@ -19,8 +19,6 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-
-        <%- include('layout/header') %>
         <!-- Vertical Overlay-->
         <div class="vertical-overlay"></div>
 
@@ -31,15 +29,6 @@
 
             <div class="page-content">
                 <div class="container-fluid">
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0">Balance</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end page title -->
 
                     <div class="row">
                         <div class="col-xxl-6">
@@ -48,13 +37,13 @@
                                 <div class="row">
 
                                     <div class="col-md-6">
-                                        <div class="card card-animate">
+                                        <div class="card card-animate" style="background-color: #d5f2cb;">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <p class="fw-semibold text-muted mb-0">Balance</p>
+                                                        <p class="fw-semibold text-muted mb-0">Balance (USD)</p>
                                                         <h2 class="mt-4 ff-secondary fw-semibold"><%= customer.balance %></h2>
-                                                        <a href="" class="text-decoration-underline text-success-50" data-bs-toggle="modal" data-bs-target="#balanceModal">Add Balance</a>
+                                                    
                                                     </div>
                                                     <div>
                                                         <div class="avatar-sm flex-shrink-0">
