@@ -1,0 +1,80 @@
+<meta charset="utf-8" />
+<title><%= title %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="AI MANAGER" name="description" />
+<!-- App favicon -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<!--datatable css-->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
+<!--datatable responsive css-->
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
+<!-- Layout config Js -->
+<script src="/assets/js/layout.js"></script>
+<!-- Bootstrap Css -->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- Icons Css -->
+<link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+<!-- App Css-->
+<link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" />
+<!-- custom Css-->
+<link href="/assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+<style>
+    .page-content{
+        padding-top: calc(5px + 1.5rem);
+        padding-right: 0;
+        padding-bottom: 60px;
+        padding-left: 0;
+    }
+
+    body {
+        font-size: 1.2em !important; /* Increase font size by 20% */
+        overflow-x: hidden;
+    }
+    div.dataTables_wrapper div.dataTables_filter input {
+        margin-left: .5em;
+        display: inline-block;
+        width: 100%;
+    }
+    /* General styles for pagination and filter */
+    .dataTables_wrapper .dataTables_filter {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px; /* Add some space between the filter and the table */
+    }
+    .dataTables_wrapper .dataTables_filter label {
+        width: 100%;
+        display: block; /* Make the label a block element */
+    }
+    .dataTables_wrapper .dataTables_filter input {
+        width: calc(100% - 30px); /* Full width for the input box */
+        box-sizing: border-box;
+        padding: 7px 10px; /* Add padding */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Adjust position */
+        background-size: 20px 20px; /* Adjust icon size */
+        border: 1px solid #ccc; /* Add border */
+        border-radius: 5px; /* Add border radius */
+        outline: none; /* Remove outline */
+        padding-left: 35px; /* Add left padding to accommodate the icon */
+        height: 40px; /* Increase box height by 5px */
+    }
+    /* Add top margin to the pagination controls */
+    .dataTables_paginate {
+        margin-top: 20px; /* Adjust the value as needed */
+    }
+    /* Align pagination controls to the right on mobile */
+    @media (max-width: 767px) {
+        .dataTables_paginate {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .dataTables_paginate {
+        padding-top: 20px;
+    }
+
+</style>
