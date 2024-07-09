@@ -663,12 +663,13 @@ exports.updateAssignment = async (req, res) => {
           customer_id: customerId
       }
     });
+    console.log(id, name, message, prompt);
     if (!assignment) {
         return res.status(404).json({ error: 'Assignment not found' });
     }
     // Update assignment fields
     assignment.name = name;
-    assignment.message = message;
+    assignment.first_message = message;
     assignment.prompt = prompt;
     // Save the updated assignment
     await assignment.save();
