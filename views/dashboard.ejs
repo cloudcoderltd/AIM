@@ -76,7 +76,7 @@
                                                                 <i class='bx bxs-user-voice text-white'></i>
                                                             </span>
                                                         </div>
-                                                        <a href="/agent" class="fw-semibold text-black mb-0 fs-4">Agents</a>
+                                                        <a href="/agent?token=<%= user.token %>" class="fw-semibold text-black mb-0 fs-4">Agents</a>
                                                     </div>
                                                     <div>
                                                         <h1 class="mt-2 ff-secondary fw-semibold" style="font-size: 3rem;"> <%= totalAssistants %> </h1>
@@ -98,7 +98,7 @@
                                                                 <i class='bx bx-voicemail text-white' ></i>
                                                             </span>
                                                         </div>
-                                                        <a href="/assignment"  class="fw-semibold text-black mb-0 fs-4">Assignments</a>
+                                                        <a href="/assignment?token=<%= user.token %>"  class="fw-semibold text-black mb-0 fs-4">Assignments</a>
                                                         <!-- <a href="/agent" class="text-decoration-underline text-success-50">View Agents</a> -->
                                                         
                                                     </div>
@@ -182,7 +182,7 @@
                                                                         <% callLogs.forEach(callLog => { %>
                                                                         <tr>
                                                                             <td>
-                                                                                <a href="/call-details/<%= callLog.id %>" class="fw-medium link-primary"><%= callLog.phone %></a>
+                                                                                <a href="/call-details/<%= callLog.id %>?token=<%= user.token %>" class="fw-medium link-primary"><%= callLog.phone %></a>
                                                                             </td>
                                                                             <td>
                                                                                 <%= callDuration(callLog.started_at, callLog.ended_at) %>

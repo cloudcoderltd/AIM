@@ -59,7 +59,7 @@
                                             <% if (assistants && assistants.length > 0) { %>
                                                 <% assistants.forEach(assistant => { %>
                                                     <tr>
-                                                        <td><a href="/agent-details/<%= assistant.id %>" class="fw-semibold text-uppercase assistant-name <%= assistant.status === 1 ? 'text-success' : 'text-black' %>" data-id="<%= assistant.id %>"> 
+                                                        <td><a href="/agent-details/<%= assistant.id %>?token=<%= user.token %>" class="fw-semibold text-uppercase assistant-name <%= assistant.status === 1 ? 'text-success' : 'text-black' %>" data-id="<%= assistant.id %>"> 
                                                                <%= assistant.name %>
                                                             </a>
                                                         </td>
